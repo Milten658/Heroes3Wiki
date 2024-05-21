@@ -1,8 +1,4 @@
 
-img{
-    width: 60%;
-    margin-left: 20%;
-}
 .list {
     display: flex; 
     justify-content: center; 
@@ -37,13 +33,17 @@ form {
   input:focus {
     width: 200px;
   }
-  button {
+  .sea {
     width: 42px;
     height: 42px;
     background: none;
     border: none;
     top: -2px;
     right: 0;
+    cursor: pointer;
+  }
+  .sea>img{
+    width: 100%;
   }
 .list>div{
     padding: 20px;

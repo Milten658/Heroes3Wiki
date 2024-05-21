@@ -27,3 +27,24 @@ function Sort() {
 function insertAfter(First, Second){
     return Second.parentNode.insertBefore(First, Second.nextSibling)
 }
+const sortButton = document.getElementById('sort-fraction');
+const nav = document.getElementById('nav');
+const creatures = nav.querySelectorAll('.creature');
+
+let isFiltered = false;
+
+sortButton.addEventListener('click', () => {
+  if (!isFiltered) {
+    creatures.forEach(creature => {
+      if (creature.dataset.type !== 'Necro' && creature.dataset.type !== 'inferno') {
+        creature.style.display = 'none';
+      }
+    });
+    isFiltered = true;
+  } else {
+    creatures.forEach(creature => {
+      creature.style.display = 'block';
+    });
+    isFiltered = false;
+  }
+});

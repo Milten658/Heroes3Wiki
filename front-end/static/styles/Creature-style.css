@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12);
     background-color: rgba(0, 0, 0, 0.822);
     border-width: 1vh;
@@ -79,8 +79,7 @@ padding-bottom: 1vh;
     margin: 0px;
     z-index: 1;
     box-shadow: 0px 5px 5px 8px rgb(116, 0, 0);
-    border-radius: 10%;
-
+    border-radius: 10%; 
 }
 
 @media (max-width: 1000px) {
