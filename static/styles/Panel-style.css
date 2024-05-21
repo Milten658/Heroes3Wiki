@@ -11,8 +11,7 @@
     b
 }
 .button{
-    margin: 1vh;
-    margin-left: 4vh;
+    margin: 0.1vh;
 }    
 .back{
     grid-column: 3/11;
@@ -22,9 +21,28 @@
     grid-column:1/3 ;
     grid-row: 1/2;
 }
+.sort-lvl{
+    margin-left: 30px;
+    width: 25vh;
+    background-color: rgb(58, 0, 0);
+    color: aliceblue;
+    height: 5vh;
+    border-radius: 3vh;
+    text-align: center;
+}
+.sort-lvl ul{
+    margin-top: -20px;
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+}
+.sort-lvl:hover > ul{
+    display: block;
+}
 #sort-asc{
     width: 25vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(58, 0, 0);
     color: aliceblue;
     height: 5vh;
     border-radius: 3vh;
@@ -32,14 +50,14 @@
 #sort-asc:hover{
     width: 25.2vh;
     height: 5.1vh;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(65, 0, 0);
     color: aliceblue;
     cursor: pointer;
     border-radius: 3vh;
 }
 #sort-dasc{
     width: 25vh;
-    background-color: black;
+    background-color: rgb(58, 0, 0);
     color: aliceblue;
     height: 40px;
     border-radius: 3vh;
@@ -47,7 +65,7 @@
 #sort-dasc:hover{
     width: 25.2vh;
     height: 5.1vh;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(65, 0, 0);
     color: aliceblue;
     cursor: pointer;
     border-radius: 3vh;

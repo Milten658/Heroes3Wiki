@@ -26,3 +26,36 @@
 .castle{
     color: rgb(20, 136, 0);
 }
+input{
+    background: #00341e;
+}
+.sort-lvl{
+    margin-left: 30px;
+    width: 25vh;
+    background-color: rgb(0, 60, 39);
+}
+#sort-asc{
+background-color: rgb(0, 60, 39);
+}
+#sort-asc:hover{
+background-color: rgb(0, 72, 47);
+}
+#sort-dasc{
+background-color: rgb(0, 60, 39);
+}
+#sort-dasc:hover{
+background-color: rgb(0, 72, 47);}
+.level {
+    color: rgb(20, 136, 0);
+}
+.creature>a>img {
+    border-color: rgb(0, 67, 32);
+    }
+    .creature:hover {
+    
+    
+        height: 110%;
+        z-index: 100;
+        box-shadow: 0px 5px 5px 8px rgb(0, 96, 56);
+    
+    }
