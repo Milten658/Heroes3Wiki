@@ -1,0 +1,63 @@
+.body {
+    background-image: url("images/swamp.webp")
+}
+.navbar {
+    display:flex;
+    background-color: rgb(80, 80, 80);
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 10%;
+    margin-left: 2%;
+}
+.list {
+    display: flex; 
+    justify-content: center; 
+}
+.list>a { 
+    display: flex;
+    padding: 20px;
+    padding-left: 80px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    text-align: center
+}
+.list a:hover {
+    color: rgb(208, 84, 12)
+}
+.nav-button{
+    display: none;
+}
+@media (max-width: 1000px){
+    .navbar {
+        justify-content: space-between;
+    }
+    .list {
+        display: none;
+    }
+    .list a {
+        padding-left: 20px;
+    }
+    img{
+        width: 20%;
+    }
+    .nav-button {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        margin: 8px;
+        background-color: antiquewhite;
+        border-style: none;
+        display: block;
+        cursor: pointer;
+    }
+    .drop:hover .list {
+    display: block;
+    position: absolute;
+    right: 1px;
+
+    background-color: rgba(255, 152, 61, 0.827);
+}
+}
