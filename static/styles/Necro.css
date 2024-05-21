@@ -1,0 +1,28 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: rgba(85, 0, 0, 0.902);
+    background-image: url('../Images/necr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creature {
+    margin: 2em;    
+    background-color: rgb(80, 0, 0);
+    border-radius: 10%;
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgba(0, 54, 39, 0.86);
+}
+.list a:hover {
+    color: rgb(0, 117, 4)
+}
+.name {
+    color: rgb(0, 111, 24);
+}
+.castle{
+    color: rgb(20, 136, 0);
+}

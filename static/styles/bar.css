@@ -1,34 +1,49 @@
-.body {
-    background-image: url("images/swamp.webp")
-}
-.navbar {
-    display:flex;
-    background-color: rgb(80, 80, 80);
-    align-items: center;
-    justify-content: center;
-}
+
 img{
-    width: 10%;
-    margin-left: 2%;
+    width: 60%;
+    margin-left: 20%;
 }
 .list {
     display: flex; 
     justify-content: center; 
 }
 .list>a { 
-    display: flex;
     padding: 20px;
     padding-left: 80px;
     text-decoration: none;
-    color: black;
+    color: rgb(215, 215, 215);
     font-size: 1.5em;
-    text-align: center
+}
+.list>div{
+    padding: 20px;
+}
+.navbar{
+    margin-top: 20px;
+}
+.list>div>a { 
+    padding: 20px;
+    padding-left: 80px;
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+    font-size: 1.5em;
+}
+.drop a{
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+}
+.menu{
+    margin-left: 80px;
+    position: absolute;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    font-size: 2em;
+}
+.list div:hover > .menu {
+    display: block;
 }
 .list a:hover {
     color: rgb(208, 84, 12)
-}
-.nav-button{
-    display: none;
 }
 @media (max-width: 1000px){
     .navbar {
@@ -39,19 +54,6 @@ img{
     }
     .list a {
         padding-left: 20px;
-    }
-    img{
-        width: 20%;
-    }
-    .nav-button {
-        font-size: 2em;
-        padding-inline: 10px;
-        padding-bottom: 3px;
-        margin: 8px;
-        background-color: antiquewhite;
-        border-style: none;
-        display: block;
-        cursor: pointer;
     }
     .drop:hover .list {
     display: block;
