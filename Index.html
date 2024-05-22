@@ -2,58 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="static/styles/Panel-style.css">
-    <link rel="stylesheet" href="static/styles/Creature-style.css">
-    <link rel="stylesheet" href="static/styles/bar.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/styles/Panel-style.css" />
+  <link rel="stylesheet" href="static/styles/Creature-style.css" />
+  <link rel="stylesheet" href="static/styles/bar.css" />
+
 </head>
 
 <body>
-    <Div class="all"></Div>
-    <div class="navbar">
-        <img id="her" src="static/Images/Logo_EMEA_189958.avif" alt="">
-        <div class="drop">
-            <button class="nav-button">&#9776;</button>
-            <div class="list">
-                <a href="Index.html">Main</a>
-                <a href="Index.html">Фракції</a>
-                <a href="Index.html">Всі істоти</a>
-                <a href="Index.html">(пошук)</a>
-            </div>
+  <div class="all"></div>
+
+  <div class="main-container">
+    <img id="her" src="static/Images/Logo_EMEA_189958.avif" alt="" />
+    <div class="back">
+      <div class="navbar">
+        <div class="list">
+          <a href="Index.html">Main</a>
+          <div class="drop">
+            <a class="city" href="Index.html">fractions</a>
+            <ul class="menu">
+              <li><a href="Index-necr.html">Necro</a></li>
+              <li><a href="#">Inferno</a></li>
+              <li><a href="#">Castle</a></li>
+            </ul>
+          </div>
+          <a href="Index.html">All creatures</a>
+          <form action="" method="get">
+            <input сlass="s" placeholder="search" type="search">
+            <button type="submit"></button>
+          </form>
         </div>
+      </div>
     </div>
-    <div class="main-container">
-        <div class="left-column">
-            <button id="sort-asc">sort +</button>
-            <button id="sort-dasc">sort -</button>
-        </div>
-        <div class="container" id="nav">
-            
-            <div class="shop" data-sort="4"><a href=""><img
-                src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-            <p class="info">12</p></div>
-            <div class="shop" data-sort="1">
-                <a href=""><img
-                        src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-                    <p class="info">3</p></div>
-                    
-            <div class="shop" data-sort="3"><a href=""><img
-                src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-            <p class="info">8</p></div>
-            <div class="shop" data-sort="2"><a href=""><img
-                src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-            <p class="info">5</p></div>
-            <div class="shop" data-sort="6"><a href=""><img
-                src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-            <p class="info">19  </p></div>
-            <div class="shop" data-sort="5"><a href=""><img
-                src="static/Images/Heroes_III_Imp_Icon.jpg" alt=""></a>
-            <p class="info">15</p></div>
-        </div>
+    <div class="left-column">
+      <div class="sort-lvl">sort by lvl
+        <ul>
+          <li><button class="button" , id="sort-asc">Sort +</button></li>
+          <li><button class="button" id="sort-dasc">Sort -</button></li>
+        </ul>
+      </div>
+
     </div>
-    <script src="sort.js"></script>
+    <div class="container" id="nav">
+      <div class="creature" data-sort="4">
+        <div class="name"> Imp</div>
+        <a href=""><img src="static/Images/Heroes_III_Imp_Icon.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 4</p>
+        <p class="atack">Atack: 4-7</p>
+      </div>
+      <div class="creature" data-sort="1">
+        <div class="name"> IMP</div>
+        <a href=""><img src="static/Images/A.jpeg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 1</p>
+        <p class="atack">Atack: 21-32</p>
+        <p class="defense">Defense: 42-69</p>
+      </div>
+
+      <div class="creature    " data-sort="3">
+        <div class="name"> Cerberus</div>
+        <a href=""><img src="static/Images/arch.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 3</p>
+      </div>
+      <div class="creature" data-sort="7">
+        <div class="name"> Cerberus</div>
+        <a href=""><img src="static/Images/arch.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 7</p>
+      </div>
+      <div class="creature" data-sort="2">
+        <div class="name"> Gog</div>
+        <a href=""><img src="static/Images/Gog.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 2</p>
+      </div>
+      <div class="creature" data-sort="6">
+        <div class="name"> Imp</div>
+        <a href=""><img src="static/Images/Gog.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 6</p>
+      </div>
+      <div class="creature" data-sort="5">
+        <div class="name"> Imp</div>
+        <a href=""><img src="static/Images/Heroes_III_Imp_Icon.jpg" alt="" /></a>
+        <p class="castle">Fraction: Inferno</p>
+        <p class="level">Level: 5</p>
+      </div>
+
+    </div>
+  </div>
+  <script src="sort.js"></script>
 </body>
 
 </html>
