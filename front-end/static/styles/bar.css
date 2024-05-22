@@ -9,8 +9,9 @@
     text-decoration: none;
     color: rgb(215, 215, 215);
     font-size: 1.5em;
+    transition: 350ms ease;
 }
-form {
+.search_form {
     text-align: center;
     width: auto;
     float: right;
@@ -19,7 +20,7 @@ form {
     color: rgb(215, 215, 215);
     font-size: 1.5em;
   }
-  input {
+  .s {
     width: 150px;
     height: 42px;
     padding-left: 15px;
@@ -30,7 +31,7 @@ form {
     position: relative;
     transition: .3s linear;
   }
-  input:focus {
+  .s:focus {
     width: 200px;
   }
   .sea {
@@ -47,6 +48,7 @@ form {
   }
 .list>div{
     padding: 20px;
+    transition: 350ms ease;
 }
 .navbar{
     margin-top: 20px;
@@ -57,10 +59,12 @@ form {
     text-decoration: none;
     color: rgb(215, 215, 215);
     font-size: 1.5em;
+    transition: 350ms ease;
 }
 .drop a{
     text-decoration: none;
     color: rgb(215, 215, 215);
+    transition: 350ms ease;
 }
 .menu{
     margin-left: 80px;
@@ -69,6 +73,7 @@ form {
     background-color: rgba(0, 0, 0, 0);
     display: none;
     font-size: 2em;
+    transition: 300ms ease;
 }
 .list div:hover > .menu {
     display: block;
