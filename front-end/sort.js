@@ -48,3 +48,19 @@ sortButton.addEventListener('click', () => {
     isFiltered = false;
   }
 });
+function sortCreatures(data, selectedLevel) {
+  // Convert selected level to integer (assuming numeric after underscore)
+  const level = parseInt(selectedLevel.split('_')[1], 10);
+
+  return data.sort((creatureA, creatureB) => {
+    const creatureALevel = parseInt(creatureA.dataset.sort, 10);
+    const creatureBLevel = parseInt(creatureB.dataset.sort, 10);
+
+    // Sort by level ascending, then by name alphabetically
+    if (creatureALevel !== creatureBLevel) {
+      return creatureALevel - creatureBLevel; // Sort by level
+    } else {
+      return creatureA.querySelector('.name').textContent.localeCompare(creatureB.querySelector('.name').textContent); // Sort by name within same level
+    }
+  });
+}

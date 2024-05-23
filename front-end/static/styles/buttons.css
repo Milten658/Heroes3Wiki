@@ -1,0 +1,148 @@
+.button{
+    margin: 0.1vh;
+    width: 20vh;
+    background-color: rgb(58, 0, 0);
+    color: aliceblue;
+    height: 5vh;
+    border-radius: 3vh;
+}    
+.button:hover{
+    width: 20.2vh;
+    height: 5.1vh;
+    background-color: rgb(65, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 3vh;
+} 
+#sort-fraction{
+    margin-left: 50px;
+    margin-top: 10px;
+} 
+.sort-lvl{
+    margin-left: 50px;
+    width: 20vh;
+    background-color: rgb(58, 0, 0);
+    color: aliceblue;
+    height: 5vh;
+    border-radius: 3vh;
+    text-align: center;
+    margin-top: 10px;
+}
+.sort-lvl ul{
+    margin-top: -20px;
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+}
+.sort-lvl:hover > ul{
+    display: block;
+}
+.fake{
+    width: 0;
+    height:0;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+.form_wrapper{
+    margin: 0px;
+    margin: 5px;
+    margin-left:6vh;
+    color: rgb(150, 150, 150);
+    font-size: 1.5em;
+}
+.level_form{ 
+    display: none;
+}
+.checkbox{
+    cursor: pointer; 
+    display: inline-block;
+}
+.level_check{
+    display: flex;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    list-style: none;    
+}
+.level_check:hover{
+    list-style: none;
+    font-size: 1.01em;
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+label:hover{
+    cursor: pointer;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+    border: 10px;
+}
+.level_menu{
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.form_title{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 5px;
+    width: 18vh;
+    color: rgb(156, 156, 156);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-color: rgb(177, 177, 177);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.form_wrapper:hover > .level_form{
+    cursor: pointer;
+    display: block;
+}
+.submit{
+    width: 19vh;
+    margin: 0.1vh;
+    background-color: rgb(58, 0, 0);
+    color: rgb(145, 145, 145);
+    height: 5vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.submit:hover{
+    background-color: rgb(65, 0, 0);
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}  
+.real{
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+    background-color: aliceblue;
+    display: inline-block;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+    border: 10px;
+}
+.real:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../Images/Heroes_III_Imp_Icon.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+.fake:checked + .real:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
