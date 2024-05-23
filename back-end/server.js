@@ -6,6 +6,8 @@ const cors = require("cors");
 
 const app = express();
 
+app.use(express.static('../front-end'))
+
 app.use(cors());
 
 var config = {
@@ -27,10 +29,10 @@ sql.connect(config, err => {
     console.log("Connection Successful");
 });
 
-app.get('/creature', async (req, res) => {
+app.get('/table', async (req, res) => {
     try {
         const pool = await sql.connect(config);
-        const data = pool.request().query('select * from creature where faction = 4');
+        const data = pool.request().query('select * from creature where Name = \'Gog\'');
         data.then(res1 => {
             return res.json(res1);
         })
@@ -40,8 +42,12 @@ app.get('/creature', async (req, res) => {
     }
 })
 
-app.get('/', (req, res) => {
-    return res.json("The backend has arrived B)");
+app.get('/pair', (req, res) => {
+    console.log('Request accepted')
+    const pair = {
+        creaure: 'orc'
+    }
+    return res.json(pair);
 
 })
 

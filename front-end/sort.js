@@ -1,36 +1,37 @@
-document.querySelector('#sort-asc').onclick = mySort
+document.querySelector('#sort-asc').onclick = DescSort
 
-function mySort() {
-    let nav = document.querySelector('#nav');
-    for (let i = 0; i < nav.children.length; i++) {
-        for (let j = i; j < nav.children.length; j++) {
-            if (+nav.children[i].getAttribute('data-sort') > +nav.children[j].getAttribute('data-sort')) {
-                replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
-                insertAfter(replacedNode, nav.children[i])
-            }
-        }
+function DescSort() {
+  let nav = document.querySelector('#nav');
+  for (let i = 0; i < nav.children.length; i++) {
+    for (let j = i; j < nav.children.length; j++) {
+      if (+nav.children[i].getAttribute('data-sort') > +nav.children[j].getAttribute('data-sort')) {
+        replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+        insertAfter(replacedNode, nav.children[i])
+      }
     }
+  }
 }
 
-document.querySelector('#sort-dasc').onclick = Sort
-function Sort() {
-    let nav = document.querySelector('#nav');
-    for (let i = 0; i < nav.children.length; i++) {
-        for (let j = i; j < nav.children.length; j++) {
-            if (+nav.children[i].getAttribute('data-sort') < +nav.children[j].getAttribute('data-sort')) {
-                replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
-                insertAfter(replacedNode, nav.children[i])
-            }
-        }
+document.querySelector('#sort-dasc').onclick = AscSort
+function AscSort() {
+  let nav = document.querySelector('#nav');
+  for (let i = 0; i < nav.children.length; i++) {
+    for (let j = i; j < nav.children.length; j++) {
+      if (+nav.children[i].getAttribute('data-sort') < +nav.children[j].getAttribute('data-sort')) {
+        replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+        insertAfter(replacedNode, nav.children[i])
+      }
     }
+  }
 }
-function insertAfter(First, Second){
-    return Second.parentNode.insertBefore(First, Second.nextSibling)
+function insertAfter(First, Second) {
+  return Second.parentNode.insertBefore(First, Second.nextSibling)
 }
 const sortButton = document.getElementById('sort-fraction');
 const nav = document.getElementById('nav');
 const creatures = nav.querySelectorAll('.creature');
 
+//necropolis button
 let isFiltered = false;
 
 sortButton.addEventListener('click', () => {
