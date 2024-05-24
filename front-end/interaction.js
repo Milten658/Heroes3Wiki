@@ -2,7 +2,6 @@ const AscBtn = document.getElementById('sort-asc')
 const DescBtn = document.getElementById('sort-dasc')
 const Creature_Level = document.getElementById('1')
 
-
 const baseUrl = 'http://localhost:3000/'
 
 AscBtn.addEventListener('click', AscSort)
@@ -16,8 +15,6 @@ async function AscSort(e) {
     const data = await res.json()
     console.log(data)
     Creature_Level.innerHTML = data.creaure
-
-
 }
 
 DescBtn.addEventListener('click', DescSort)
