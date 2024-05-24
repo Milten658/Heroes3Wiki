@@ -20,6 +20,16 @@ async function AscSort(e) {
 
 }
 
-async function DescSort() {
+DescBtn.addEventListener('click', DescSort)
+async function DescSort(e) {
+    e.preventDefault()
+    console.log('clicked')
+    const res = await fetch(baseUrl + 'Inferno', {
+        method: 'GET'
+    })
+    console.log(res)
+    const data = await res.json()
+    console.log(data)
+    Creature_Level.innerHTML = data.level
 
 }

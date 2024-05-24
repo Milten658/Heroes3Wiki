@@ -29,13 +29,15 @@ sql.connect(config, err => {
     console.log("Connection Successful");
 });
 
-app.get('/table', async (req, res) => {
+app.get('/Inferno', async (req, res) => {
+    console.log('Data request accepted')
     try {
         const pool = await sql.connect(config);
-        const data = pool.request().query('select * from creature where Name = \'Gog\'');
-        data.then(res1 => {
-            return res.json(res1);
-        })
+        const data = pool.request().query('select * from creature where name = \'Gog\'');
+        // data.then(res1 => {
+        //    return res.json(res1);
+        //})
+        return res.json(data)
     }
     catch (err) {
         console.log('err');
@@ -45,7 +47,7 @@ app.get('/table', async (req, res) => {
 app.get('/pair', (req, res) => {
     console.log('Request accepted')
     const pair = {
-        creaure: 'orc'
+        creaure: '<h1>orc</h1>'
     }
     return res.json(pair);
 
