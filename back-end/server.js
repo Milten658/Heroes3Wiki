@@ -6,6 +6,7 @@ const cors = require("cors");
 
 const app = express();
 
+
 app.use(express.static('../front-end'))
 
 app.use(cors());
@@ -29,14 +30,20 @@ sql.connect(config, err => {
     console.log("Connection Successful");
 });
 
-app.get('/Inferno', async (req, res) => {
-    console.log('Data request accepted')
+
+
+app.get('/load', async (req, res) => {
+    const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
+    console.log('Faction page request accepted: ' + faction)
+
+    const faction_request = 'SELECT c.creature_id, c.name, f.name, c.building, c.attack, c.defence, c.health, c.speed, c.level FROM creature AS c INNER JOIN faction AS f ON c.faction = f.faction_id WHERE f.name =  \'' + faction + '\'';
     try {
         const pool = await sql.connect(config);
-        const data = pool.request().query('select * from creature where name = \'Gog\'');
-        // data.then(res1 => {
-        //    return res.json(res1);
-        //})
+        const data = pool.request().query(faction_request);
+        data.then(res1 => {
+            return res.json(res1);
+        })
+        console.log(res1)
         return res.json(data)
     }
     catch (err) {
