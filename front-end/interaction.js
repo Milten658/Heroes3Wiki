@@ -3,7 +3,7 @@
 //const Creature_Level = document.getElementById('1')
 const Container = document.getElementById('nav')
 
-const baseUrl = `http://localhost:3000/`
+const baseUrl = `http://192.168.1.108:3000/`
 
 // AscBtn.addEventListener('click', AscSort)
 // async function AscSort(e) {
@@ -32,7 +32,7 @@ const baseUrl = `http://localhost:3000/`
 
 // }
 var currentURL = window.location.href;
-const pattern = /localhost:3000\/(\w+)/;
+const pattern = /:3000\/(\w+)/;
 const match = currentURL.match(pattern);
 const extractedWord = match[1];
 console.log("Extracted word:", extractedWord);
@@ -53,15 +53,27 @@ async function load_creatures() {
 
     for (let i = 0; i < data.length; i++) {
 
-        const Creature_box = `<div class=\"creature\" data-sort=\"4\">` +
+        const Creature_box = `<div class=\"creature\" data-sort=\"\">` +
             `<div class=\"name\"> ${data[i].name}</div>` +
-            `<a href=\"\"><img src=\"static/Images/angel.jpg\" alt=\"\" /></a>` +
-            `<p class=\"castle\">Faction: ${data[i].faction_name} </p>` +
-            `<p class=\"level\">Level: ${data[i].level} </p>` +
-            `<p class=\"atack\">Atack: ${data[i].attack} </p>` +
-            `<p class=\"def\">defense: ${data[i].defence} </p>` +
-            `<p class=\"hp\">HP: ${data[i].health} </p>` +
-            `</div>`;
+            `<a href =\"\"><img src=\"static/Images/average/${data[i].img}\" /></a>` +
+            `<ul class=\"description\">` +
+            `<li> <img src=\"static/Images/lvlo.png\" class=\"stat\" id=\"lvlim\">` +
+            `<p class=\"stats\" id=\"lvle\">Level: ${data[i].level}</p> </li >` +
+            `<li><img src=\"static/Images/Gold.gif\" class=\"stat\">` +
+            `<p class=\"stats\" id=\"prc\">Price: ${data[i].price} gold</p>` +
+            `</li>` +
+            `<li><img src=\"static/Images/hp.png\" class=\"stat\">` +
+            `<p class=\"stats\" id=\"hpe\">HP: ${data[i].health}</p>` +
+            `</li>` +
+            `<li><img src=\"static/Images/atck.png\" class=\"stat\">` +
+            `<p class=\"stats\" id=\"atc\">Atack: ${data[i].attack}</p>` +
+            `</li >` +
+            `<li><img src=\"static/Images/shield.png\" class=\"stat\">` +
+            `<p class=\"stats\" id=\"df\">Defense: ${data[i].defence}</p>` +
+            `</li >` +
+            `<li><img src=\"static/Images/speed.png\" class=\"stat\">` +
+            `<p class=\"stats\" id=\"spd\">Speed: ${data[i].speed}</p>` +
+            `</li>  </ul>  </div>`;
 
         Creature_list += Creature_box;
     }
@@ -70,3 +82,4 @@ async function load_creatures() {
     Container.innerHTML = Creature_list;
 
 }
+
