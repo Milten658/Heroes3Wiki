@@ -4,7 +4,7 @@ function DescSort() {
   let nav = document.querySelector('#nav');
   for (let i = 0; i < nav.children.length; i++) {
     for (let j = i; j < nav.children.length; j++) {
-      if (+nav.children[i].getAttribute('data-sort') > +nav.children[j].getAttribute('data-sort')) {
+      if (+nav.children[i].getAttribute('hp_sort') > +nav.children[j].getAttribute('hp_sort')) {
         replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
         insertAfter(replacedNode, nav.children[i])
       }
@@ -17,7 +17,7 @@ function AscSort() {
   let nav = document.querySelector('#nav');
   for (let i = 0; i < nav.children.length; i++) {
     for (let j = i; j < nav.children.length; j++) {
-      if (+nav.children[i].getAttribute('data-sort') < +nav.children[j].getAttribute('data-sort')) {
+      if (+nav.children[i].getAttribute('hp_sort') < +nav.children[j].getAttribute('hp_sort')) {
         replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
         insertAfter(replacedNode, nav.children[i])
       }
