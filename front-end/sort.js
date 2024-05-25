@@ -1,4 +1,4 @@
-document.querySelector('#sort-asc').onclick = DescSort
+document.querySelector('.sort_asc').onclick = DescSort
 
 function DescSort() {
   let nav = document.querySelector('#nav');
@@ -12,7 +12,7 @@ function DescSort() {
   }
 }
 
-document.querySelector('#sort-dasc').onclick = AscSort
+document.querySelector('.sort_desc').onclick = AscSort
 function AscSort() {
   let nav = document.querySelector('#nav');
   for (let i = 0; i < nav.children.length; i++) {
