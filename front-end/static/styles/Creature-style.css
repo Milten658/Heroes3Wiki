@@ -82,14 +82,14 @@
     border-radius: 10%; 
     height: 122%;
 }
-#lvle, #hpe{
+#lvle, #prc{
     font-size: 30px;
 }
 #lvlim{
     width: 30px;
     height: 25px;
 }
- #hpim{
+ #prcim{
     width: 30px;
     height: 30px;
 }
