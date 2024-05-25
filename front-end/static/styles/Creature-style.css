@@ -6,7 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12 );
+    grid-template-rows: repeat(12);
     background-color: rgba(0, 0, 0, 0.822);
     border-width: 1vh;
     border-style: solid;
@@ -16,19 +16,22 @@
 }
 
 .creature {
-    margin: 2em;    
+    width: 90%;
+    height: 85%;   
+    margin-top: 20px;
     background-color: rgb(135, 0, 0);
     border-radius: 10%;
     border-width: 3px;
     border-style: solid;
-    background-color: rgb(36, 17, 17);
-    transition: 200ms ease;
+    background-color: rgb(37, 9, 9);
+    transition: 400ms ease;
 }
 
 .creature>a>img {
     border-radius: 10%;
     margin: 0px;
     width: 95%;
+    height: 280px;
     margin-left: 1.7%;
     border-width: 3px;
     border-style: solid;
@@ -36,60 +39,66 @@
     border-color: rgb(73, 16, 0);
     
 }
-.level{
-    font-size: 3vh;
-    text-align: left;
-    color: rgb(88, 12, 0);
-    padding-left: 2vh;
-    padding-bottom: 1vh;
-}
-.atack{
-    font-size: 3vh;
-    text-align: left;
-    color: rgb(88, 12, 0);
-    padding-left: 2vh;
-    padding-bottom: 1vh;
-    display: none;
+.description{
+    font-size: 0px;
+    position: absolute;
+    transition: 240ms ease;
+    list-style: none;
+    margin-top: -2px; 
+
 }
 
-.def{
+.description li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vh;
+    text-align: left;
+    color: rgb(176, 176, 176);
+}
+/* .level{ 
     font-size: 3vh;
     text-align: left;
     color: rgb(88, 12, 0);
     padding-left: 2vh;
     padding-bottom: 1vh;
-    display: none;
-}
-.hp{
-    font-size: 3vh;
-    text-align: left;
-    color: rgb(88, 12, 0);
-    padding-left: 2vh;
-    padding-bottom: 1vh;
-    display: none;
-}
-.castle { 
-font-size: 3vh;
-text-align: left;
-color: rgb(88, 12, 0);
-padding-left: 2vh;
-padding-bottom: 1vh;
-}
+    display: initial !important;
+} */
 .name {
     text-align: center;
     font-size: 2em;
     color: rgb(172, 37, 0);
 }
-.creature:hover > .atack{display: block;}
-.creature:hover > .def{display: block;}
-.creature:hover > .hp{display: block;}
+.creature:hover > .description{font-size: 30px;}
+.creature:hover  .stat{
+    width: 30px;
+    height: 30px;
+}
 .creature:hover{
+    margin: 10px;
     margin: 0px;
     z-index: 1;
-    box-shadow: 0px 5px 5px 8px rgb(116, 0, 0);
+    box-shadow: 0px 5px 5px 9px rgb(116, 0, 0);
+    background-color: rgb(17, 0, 0);
     border-radius: 10%; 
+    height: 122%;
 }
-
+#lvle, #prc{
+    font-size: 30px;
+}
+#lvlim{
+    width: 30px;
+    height: 25px;
+}
+ #prcim{
+    width: 30px;
+    height: 30px;
+}
+.stat{
+    transition: 240ms ease;
+    width: 0%;
+    height: 0;
+    vertical-align:sub;
+}
 @media (max-width: 1000px) {
     .container {
         display: grid;

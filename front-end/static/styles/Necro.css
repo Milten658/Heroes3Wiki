@@ -9,56 +9,58 @@
     background-size: cover;
 }
 
-.container{
-    background-color: rgba(0, 0, 0, 0.796);
+.container {
+    background-color: rgba(0, 0, 0, 0.822);
 }
+
 .creature {
-    margin: 2em;    
-    background-color: rgb(80, 0, 0);
-    border-radius: 10%;
-    border-width: 3px;
-    border-style: solid;
-    background-color: rgba(0, 54, 39, 0.86);
+    background-color: rgb(0, 77, 59);
 }
-.list a:hover {
-    color: rgb(0, 117, 4)
+
+.creature>a>img {
+    border-color: rgb(0, 106, 69);
+    
+}
+.description{
+    font-size: 0px;
+    position: absolute;
+    transition: 240ms ease;
+    list-style: none;
+    margin-top: -2px; 
+
+}
+
+.description li{
+    color: rgb(176, 176, 176);
 }
 .name {
-    color: rgb(0, 111, 24);
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 165, 74);
 }
-.castle{
-    color: rgb(20, 136, 0);
+.creature:hover{
+    background-color: rgb(2, 48, 34);
+    border-radius: 10%; 
+    height: 124%;
+    width: 96%;
+    box-shadow: 0px 5px 5px 9px rgb(0, 100, 73);
+    margin-top: -30px;
+    margin-left: -5px;
 }
-input{
-    background: #00341e;
-}
-.sort-lvl{
-    margin-left: 30px;
-    width: 25vh;
-    background-color: rgb(0, 60, 39);
-}
-#sort-asc{
-background-color: rgb(0, 60, 39);
-}
-#sort-asc:hover{
-background-color: rgb(0, 72, 47);
-}
-#sort-dasc{
-background-color: rgb(0, 60, 39);
-}
-#sort-dasc:hover{
-background-color: rgb(0, 72, 47);}
-.level {
-    color: rgb(20, 136, 0);
-}
-.creature>a>img {
-    border-color: rgb(0, 67, 32);
+@media (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5);
     }
-    .creature:hover {
-    
-    
-        height: 110%;
-        z-index: 100;
-        box-shadow: 0px 5px 5px 8px rgb(0, 120, 70);
-    
+}
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9);
     }
+    .creature {
+        margin-inline: 0;
+    }
+}

@@ -24,8 +24,8 @@
                     <div class="drop">
                         <a class="city" href="Index.html">fractions</a>
                         <ul class="menu">
-                            <li><a href="Index-necr.html">Necro</a></li>
-                            <li><a href="Index.html">Inferno</a></li>
+                            <li><a href="necropolis.html">Necro</a></li>
+                            <li><a href="inferno.html">Inferno</a></li>
                             <li><a href="castle.html">Castle</a></li>
                         </ul>
                     </div>
@@ -39,6 +39,7 @@
             </div>
         </div>
         <div class="left-column">
+
             <div class="form_wrapper">
                 <div class="form_title">Choose a level</div>
                 <div class="level_form">
@@ -91,6 +92,53 @@
                 </div>
                 </ul>
             </div>
+            
+            <div class="sort_wrapper">
+             <div class="sort_title">Sort parameter</div>   
+             <div class="sort_form">
+                <form action="#">
+             <ul class="sort_menu">
+                <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_1"> Attack</div>
+                        <input type="radio" value="attack" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_2">Level</div>
+                        <input type="radio" value="level" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_3">Defense</div>
+                        <input type="radio" value="defense" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_4">Hp</div>
+                        <input type="radio" value="health" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_5">Speed</div>
+                        <input type="radio" value="speed" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    <li class="sort_check"> <label class="grid_p">
+                        <div class="checkbox" name="radio_6">Price</div>
+                        <input type="radio" value="price" name="sort_by" class="fake">
+                        <span class="real_sort"></span>
+                    </label> </li>
+                    </ul>
+                    <div class="sort_title">Sort by</div>   
+                    <div class="submit_wrapper">
+                        
+                    <button type="submit" class="sort_asc">Ascending</button>
+                    <button type="submit" class="sort_desc">Descending</button>
+                    </div>
+                    </form>
+                    </div>
+            </div>
+
             <button class="button" , id="sort-fraction">Necropolis</button>
             <div class="sort-lvl">sort by lvl
                 <ul>
@@ -101,18 +149,17 @@
         </div>
 
         <div class="container" id="nav">
-            <div class="creature_line" data-sort="1" data>
-                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
-
-            </div>
-            <div class="creature_line">
+            <div class="creature_line" hp_sort="1" atck_sort="" >
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
                 <a href="">Inferno 1 lvl creature Imp</a>
             </div>
-            <div class="creature_line">
+            <div class="creature_line" hp_sort="2">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="">Inferno 2 lvl creature Imp</a>
+            </div>
+            <div class="creature_line" hp_sort="3">
+                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
+                <a href="">Inferno 3 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
