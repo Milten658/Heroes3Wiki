@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="static/styles/bar.css" />
     <link rel="stylesheet" href="static/styles/all_creatures.css" />
     <link rel="stylesheet" href="static/styles/buttons.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="all"></div>
-
     <div class="main-container">
         <img id="her" src="static/Images/Logo_EMEA_189958.avif" alt="" />
         <div class="back">
@@ -22,11 +22,14 @@
                 <div class="list">
                     <a href="Index.html">Main</a>
                     <div class="drop">
-                        <a class="city" href="Index.html">fractions</a>
+                        <a class="city" href="Index.html">Factions</a>
                         <ul class="menu">
                             <li><a href="necropolis.html">Necro</a></li>
-                            <li><a href="inferno.html">Inferno</a></li>
-                            <li><a href="castle.html">Castle</a></li>
+              <li><a href="inferno.html">Inferno</a></li>
+              <li><a href="castle.html">Castle</a></li>
+              <li><a href="dungeon.html">Dungeon</a></li>
+              <li><a href="conflux.html">Conflux</a></li>
+              <li><a href="fortress.html">Fortress</a></li>
                         </ul>
                     </div>
                     <a href="all_creatures.html">All creatures</a>
@@ -45,43 +48,43 @@
                 <div class="level_form">
                     <form action="#">
                         <ul class="level_menu">
-                            <li class="level_check"> <label>
-                                    <div class="checkbox" name="checkbox_1"> Level 1</div>
+                            <li class="level_check"> <label class="grid_level">
+                                    <div class="checkbox" name="checkbox_1">Level 1</div>
                                     <input type="checkbox" name="inchecbox_1" class="fake">
                                     <span class="real"></span>
                                 </label> </li>
 
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 2</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
                                 </label>
                             </li>
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 3</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
                                 </label>
                             </li>
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 4</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
                                 </label>
                             </li>
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 5</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
                                 </label>
                             </li>
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 6</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
                                 </label>
                             </li>
-                            <li class="level_check"><label>
+                            <li class="level_check"><label class="grid_level">
                                     <div class="checkbox" name="checkbox_2">Level 7</div>
                                     <input class="fake" type="checkbox" name="inchecbox_2">
                                     <span class="real"></span>
@@ -138,104 +141,97 @@
                     </form>
                     </div>
             </div>
-
-            <button class="button" , id="sort-fraction">Necropolis</button>
-            <div class="sort-lvl">sort by lvl
-                <ul>
-                    <li><button class="button" , id="sort-asc">Sort +</button></li>
-                    <li><button class="button" id="sort-dasc">Sort -</button></li>
-                </ul>
-            </div>
         </div>
 
         <div class="container" id="nav">
-            <div class="creature_line" hp_sort="1" atck_sort="" >
+           
+            <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
-            </div>
-            <div class="creature_line" hp_sort="2">
-                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 2 lvl creature Imp</a>
-            </div>
-            <div class="creature_line" hp_sort="3">
-                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 3 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
             <div class="creature_line">
                 <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
-                <a href="">Inferno 1 lvl creature Imp</a>
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
+            </div>
+            <div class="creature_line">
+                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
+            </div>
+            <div class="creature_line">
+                <img class="small_pic" src="static/Images/Heroes_III_Imp_Icon.jpg" alt="">
+                <a href="creature.html">Inferno 1 lvl creature Imp</a>
             </div>
         </div>
     </div>

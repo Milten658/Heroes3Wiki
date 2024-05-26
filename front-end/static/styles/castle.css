@@ -3,7 +3,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: rgba(85, 0, 0, 0.902);
-    background-image: url('../Images/castle2.jpg');
+    background-image: url('../Images/necr.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
