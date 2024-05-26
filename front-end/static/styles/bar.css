@@ -11,41 +11,6 @@
     font-size: 1.5em;
     transition: 350ms ease;
 }
-.search_form {
-    text-align: center;
-    width: auto;
-    float: right;
-    padding-left: 80px;
-    text-decoration: none;
-    color: rgb(215, 215, 215);
-    font-size: 1.5em;
-  }
-  .s {
-    width: 150px;
-    height: 42px;
-    padding-left: 15px;
-    border-radius: 42px;
-    border: 2px solid #000000;
-    background: #340700;
-    outline: none;
-    position: relative;
-    transition: .3s linear;
-  }
-  .s:focus {
-    width: 200px;
-  }
-  .sea {
-    width: 42px;
-    height: 42px;
-    background: none;
-    border: none;
-    top: -2px;
-    right: 0;
-    cursor: pointer;
-  }
-  .sea>img{
-    width: 100%;
-  }
 .list>div{
     padding: 20px;
     transition: 350ms ease;
