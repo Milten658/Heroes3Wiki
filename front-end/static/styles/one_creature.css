@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: rgba(85, 0, 0, 0.902);
+    background-image: url('../Images/Citadel_background1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.all_content {
+    background-image:url('../Images/creature_co.png') ;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column: 2/12;
+    grid-row: 2/12;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+.creature_img_stat{
+    opacity: 0.8;
+    grid-column: 2;
+    grid-row: 2/13;
+    height:600px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 60px 10px rgb(0, 0, 0);
+}
+.creature_img{
+    margin-top: 5px;
+    height: 75%;
+}
+.creature_name{
+    margin-top: 30px;
+    font-size: 40;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    color: rgb(255, 235, 185);
+    font-weight: bold;
+}
+.back{
+    grid-column: 3/11;
+    grid-row: 1;
+}
+#her{
+    grid-column:1/3 ;
+    grid-row: 1/2;
+    width: 60%;
+    margin-left: 20%;
+}
+.stats_little{
+   font-size: 20px;
+   color: rgb(255, 235, 185);
+   display: flex;
+}
+.building{
+    font-size: 25px;
+    color: rgb(255, 235, 185);
+    text-align: center;
+    margin-top: 15px;
+ }
+#prcim{
+    width: 30px;
+    height: 30px;
+}
+#lvlim{
+    width: 25px;
+    height: 25px;
+}
+.stat{
+    margin-left: 15px;
+}
+.full_descript{
+    margin-left: 30px;
+    grid-column: 3/12;
+    grid-row: 2/13;
+    font-size: 30px;
+    color: rgb(191, 173, 129);;
+}
+h2{
+  margin: -10px;  
+  margin-bottom: -5px;
+  margin-left: 0px;
+  color: rgb(204, 190, 155);    
+  border-style: solid; 
+  border-top: 2px;
+  border-left: 10px;
+  border-right: 20px;
+  width: 38%;
+}

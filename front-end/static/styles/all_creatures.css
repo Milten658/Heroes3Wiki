@@ -4,7 +4,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: rgba(85, 0, 0, 0.902);
-    background-image: url('../Images/Background_Inferno.jpg');
+    background-image: url('../Images/creat.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
