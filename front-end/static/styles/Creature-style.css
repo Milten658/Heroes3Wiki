@@ -17,7 +17,7 @@
 
 .creature {
     width: 90%;
-    height: 85%;   
+    height: 85%;
     margin-top: 20px;
     background-color: rgb(135, 0, 0);
     border-radius: 10%;
@@ -37,24 +37,26 @@
     border-style: solid;
     background-color: brown;
     border-color: rgb(73, 16, 0);
-    
+
 }
-.description{
+
+.description {
     font-size: 0px;
     position: absolute;
     transition: 240ms ease;
     list-style: none;
-    margin-top: -2px; 
+    margin-top: -2px;
 
 }
 
-.description li{
+.description li {
     display: flex;
     align-items: center;
     padding-bottom: 1vh;
     text-align: left;
     color: rgb(176, 176, 176);
 }
+
 /* .level{ 
     font-size: 3vh;
     text-align: left;
@@ -68,37 +70,48 @@
     font-size: 2em;
     color: rgb(172, 37, 0);
 }
-.creature:hover > .description{font-size: 30px;}
-.creature:hover  .stat{
+
+.creature:hover>.description {
+    font-size: 30px;
+}
+
+.creature:hover .stat {
     width: 30px;
     height: 30px;
 }
-.creature:hover{
+
+.creature:hover {
     margin: 10px;
     margin: 0px;
     z-index: 1;
     box-shadow: 0px 5px 5px 9px rgb(116, 0, 0);
     background-color: rgb(17, 0, 0);
-    border-radius: 10%; 
+    border-radius: 10%;
     height: 122%;
 }
-#lvle, #prc{
+
+#lvle,
+#prc {
     font-size: 30px;
 }
-#lvlim{
+
+#lvlim {
     width: 30px;
     height: 25px;
 }
- #prcim{
+
+#prcim {
     width: 30px;
     height: 30px;
 }
-.stat{
+
+.stat {
     transition: 240ms ease;
     width: 0%;
     height: 0;
-    vertical-align:sub;
+    vertical-align: sub;
 }
+
 @media (max-width: 1000px) {
     .container {
         display: grid;
@@ -106,12 +119,14 @@
         grid-template-rows: repeat(5);
     }
 }
+
 @media (max-width: 600px) {
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9);
     }
+
     .creature {
         margin-inline: 0;
     }
