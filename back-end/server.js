@@ -31,13 +31,12 @@ sql.connect(config, err => {
 });
 
 
-
 app.get('/faction_page_load', async (req, res) => {
     const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
     console.log('Faction page request accepted: ' + faction)
 
-    const faction_request = 'SELECT c.creature_id, c.name, f.name AS faction_name,' +
-        ' c.building, c.price, c.attack, c.defence, c.health, c.speed, c.level, c.img' +
+    const faction_request = 'SELECT c.name, ' +
+        ' c.price, c.attack, c.defence, c.health, c.speed, c.level, c.img' +
         ' FROM creature AS c' +
         ' INNER JOIN faction AS f ON c.faction = f.faction_id WHERE f.name =  \'' + faction + '\'';
     try {
@@ -46,26 +45,36 @@ app.get('/faction_page_load', async (req, res) => {
             if (err) {
                 console.error("Error executing query:", err);
             } else {
-                res.send(result.recordset); // Send query result as response
-                console.dir(result.recordset);
+                res.send(result.recordset);
+                //console.dir(result.recordset);
             }
         });
-
-
-
     }
     catch (err) {
         console.log(err);
     }
 })
 
-app.get('/pair', (req, res) => {
-    console.log('Request accepted')
-    const pair = {
-        creaure: '<h1>orc</h1>'
-    }
-    return res.json(pair);
+app.get('/Creatures_page', async (req, res) => {
 
+    //const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
+    //console.log('Faction page request accepted: ' + faction)
+
+    const creatures_request = '';
+    try {
+        const pool = await sql.connect(config);
+        const data = pool.request().query(faction_request, (err, result) => {
+            if (err) {
+                console.error("Error executing query:", err);
+            } else {
+                res.send(result.recordset);
+                //console.dir(result.recordset);
+            }
+        });
+    }
+    catch (err) {
+        console.log(err);
+    }
 })
 
 app.listen(3000, () => {
