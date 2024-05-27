@@ -3,7 +3,7 @@
 //const Creature_Level = document.getElementById('1')
 const Container = document.getElementById('nav')
 
-const baseUrl = `http://192.168.1.108:3000/`
+const baseUrl = `http://localhost:3000/`
 
 // AscBtn.addEventListener('click', AscSort)
 // async function AscSort(e) {
@@ -32,7 +32,7 @@ const baseUrl = `http://192.168.1.108:3000/`
 
 // }
 var currentURL = window.location.href;
-const pattern = /:3000\/(\w+)/;
+const pattern = /\/([^/]+)\.html/; // /0\/(\w+)/;
 const match = currentURL.match(pattern);
 const extractedWord = match[1];
 console.log("Extracted word:", extractedWord);
@@ -48,8 +48,6 @@ async function load_creatures() {
     })
     const data = await res.json();
     console.log(data)
-
-
 
     for (let i = 0; i < data.length; i++) {
 
@@ -77,9 +75,6 @@ async function load_creatures() {
 
         Creature_list += Creature_box;
     }
-
-
     Container.innerHTML = Creature_list;
-
 }
 
