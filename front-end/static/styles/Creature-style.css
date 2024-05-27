@@ -52,7 +52,7 @@
 .description li {
     display: flex;
     align-items: center;
-    padding-bottom: 1vh;
+    padding-bottom: ;
     text-align: left;
     color: rgb(176, 176, 176);
 }
@@ -69,6 +69,7 @@
     text-align: center;
     font-size: 2em;
     color: rgb(172, 37, 0);
+    font-weight: bold;
 }
 
 .creature:hover>.description {

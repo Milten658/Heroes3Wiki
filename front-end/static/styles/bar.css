@@ -2,6 +2,7 @@
 .list {
     display: flex; 
     justify-content: center; 
+    font-weight: 600;
 }
 .list>a { 
     padding: 20px;
@@ -35,10 +36,12 @@
     margin-left: 80px;
     position: absolute;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.375);
     display: none;
     font-size: 2em;
     transition: 300ms ease;
+    z-index: 5;
+    border-radius: 8px;
 }
 .list div:hover > .menu {
     display: block;
