@@ -32,7 +32,7 @@ const baseUrl = `http://localhost:3000/`
 
 // }
 var currentURL = window.location.href;
-const pattern = /:3000\/(\w+)/;
+const pattern = /end\/(\w+)/;
 const match = currentURL.match(pattern);
 const extractedWord = match[1];
 console.log("Extracted word:", extractedWord);
@@ -77,9 +77,6 @@ async function load_creatures() {
 
         Creature_list += Creature_box;
     }
-
-
     Container.innerHTML = Creature_list;
-
 }
 
