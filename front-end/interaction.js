@@ -49,8 +49,6 @@ async function load_creatures() {
     const data = await res.json();
     console.log(data)
 
-
-
     for (let i = 0; i < data.length; i++) {
 
         const Creature_box = `<div class=\"creature\" data-sort=\"\">` +
