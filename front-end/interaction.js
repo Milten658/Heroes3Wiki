@@ -3,7 +3,7 @@
 //const Creature_Level = document.getElementById('1')
 const Container = document.getElementById('nav')
 
-const baseUrl = `http://192.168.1.108:3000/`
+const baseUrl = `http://localhost:3000/`
 
 // AscBtn.addEventListener('click', AscSort)
 // async function AscSort(e) {
