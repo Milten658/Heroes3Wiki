@@ -31,50 +31,85 @@ sql.connect(config, err => {
 });
 
 
-app.get('/faction_page_load', async (req, res) => {
-    const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
-    console.log('Faction page request accepted: ' + faction)
+app.get('/page_load', async (req, res) => {
 
-    const faction_request = 'SELECT c.name, ' +
-        ' c.price, c.attack, c.defence, c.health, c.speed, c.level, c.img' +
-        ' FROM creature AS c' +
-        ' INNER JOIN faction AS f ON c.faction = f.faction_id WHERE f.name =  \'' + faction + '\'';
-    try {
-        const pool = await sql.connect(config);
-        const data = pool.request().query(faction_request, (err, result) => {
-            if (err) {
-                console.error("Error executing query:", err);
-            } else {
-                res.send(result.recordset);
-                //console.dir(result.recordset);
+    //const request_data = await req.json();
+
+
+
+
+    if (req.query.faction == 'all_creatures') {
+        console.log('Creatures page request accepted')
+
+        const creatures_request = 'SELECT c.name, f.name AS faction,  c.price, c.attack, c.defence,' +
+            ' c.health, c.speed, c.level, c.img' +
+            ' FROM creature AS c ' +
+            'INNER JOIN faction AS f ON c.faction = f.faction_id';
+        try {
+            const pool = await sql.connect(config);
+            const data = pool.request().query(creatures_request, (err, result) => {
+                if (err) {
+                    console.error("Error executing query:", err);
+                } else {
+                    res.send(result.recordset);
+                    console.dir(result.recordset);
+                }
+            });
+        }
+        catch (err) {
+            console.log(err);
+        }
+
+    } else {
+
+        if (req.query.faction.charAt(0).toLowerCase() == req.query.faction.charAt(0)) {
+
+            const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
+            console.log('Faction page request accepted: ' + faction)
+
+            const faction_request = 'SELECT c.name, ' +
+                ' c.price, c.attack, c.defence, c.health, c.speed, c.level, c.img' +
+                ' FROM creature AS c' +
+                ' INNER JOIN faction AS f ON c.faction = f.faction_id WHERE f.name =  \'' + faction + '\'';
+            try {
+                const pool = await sql.connect(config);
+                const data = pool.request().query(faction_request, (err, result) => {
+                    if (err) {
+                        console.error("Error executing query:", err);
+                    } else {
+                        res.send(result.recordset);
+                        //console.dir(result.recordset);
+                    }
+                });
             }
-        });
-    }
-    catch (err) {
-        console.log(err);
-    }
-})
-
-app.get('/Creatures_page', async (req, res) => {
-
-    //const faction = req.query.faction.charAt(0).toUpperCase() + req.query.faction.slice(1)
-    //console.log('Faction page request accepted: ' + faction)
-
-    const creatures_request = '';
-    try {
-        const pool = await sql.connect(config);
-        const data = pool.request().query(faction_request, (err, result) => {
-            if (err) {
-                console.error("Error executing query:", err);
-            } else {
-                res.send(result.recordset);
-                console.dir(result.recordset);
+            catch (err) {
+                console.log(err);
             }
-        });
+        } else {
+            const creature_name = req.query.faction
+            console.log('Creature page request accepted: ' + creature_name)
+
+            const creature_request = `SELECT c.name, f.name AS faction, c.price, c.attack,` +
+                ` c.defence, c.health, c.speed, c.level, c.img, c.building` +
+                ` FROM creature AS c` +
+                ` INNER JOIN faction AS f ON c.faction = f.faction_id WHERE c.name = \'` + creature_name + `\';`;
+            try {
+                const pool = await sql.connect(config);
+                const data = pool.request().query(creature_request, (err, result) => {
+                    if (err) {
+                        console.error("Error executing query:", err);
+                    } else {
+                        res.send(result.recordset);
+                        console.dir(result.recordset);
+                    }
+                });
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
     }
-    catch (err) {
-        console.log(err);
-    }
+
 })
 
 app.listen(3000, () => {
