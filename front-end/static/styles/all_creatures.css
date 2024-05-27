@@ -28,7 +28,7 @@ body{
     margin-left: 20%;
 }
 .left-column {
-    grid-row: 3/13; 
+    grid-row: 2/13; 
 grid-column: 1/3;
 }
 .container {
