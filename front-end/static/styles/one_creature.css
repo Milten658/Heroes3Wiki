@@ -37,7 +37,8 @@
 .creature_img{
     margin-top: 5px;
     height: 75%;
-    border-radius: 10px;
+    border-radius: 15px;
+    min-width: 100%;
 }
 .creature_name{
     margin-top: 30px;
