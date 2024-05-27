@@ -37,6 +37,7 @@
 .creature_img{
     margin-top: 5px;
     height: 75%;
+    border-radius: 10px;
 }
 .creature_name{
     margin-top: 30px;
@@ -58,9 +59,11 @@
     margin-left: 20%;
 }
 .stats_little{
+    margin-top: 7px;
    font-size: 20px;
    color: rgb(255, 235, 185);
    display: flex;
+   justify-content: space-between
 }
 .building{
     font-size: 25px;
@@ -73,6 +76,7 @@
     height: 30px;
 }
 #lvlim{
+    margin-left: 5px;
     width: 25px;
     height: 25px;
 }
