@@ -68,7 +68,7 @@ app.get('/Creatures_page', async (req, res) => {
                 console.error("Error executing query:", err);
             } else {
                 res.send(result.recordset);
-                //console.dir(result.recordset);
+                console.dir(result.recordset);
             }
         });
     }
