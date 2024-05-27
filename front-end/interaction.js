@@ -57,7 +57,7 @@ async function load_creatures() {
             `<ul class=\"description\">` +
             `<li> <img src=\"static/Images/lvlo.png\" class=\"stat\" id=\"lvlim\">` +
             `<p class=\"stats\" id=\"lvle\">Level: ${data[i].level}</p> </li >` +
-            `<li><img src=\"static/Images/Gold.gif\" class=\"stat\">` +
+            `<li><img src=\"static/Images/Gold.gif\" class=\"stat\"> id=\"prcim\">` +
             `<p class=\"stats\" id=\"prc\">Price: ${data[i].price} gold</p>` +
             `</li>` +
             `<li><img src=\"static/Images/hp.png\" class=\"stat\">` +
