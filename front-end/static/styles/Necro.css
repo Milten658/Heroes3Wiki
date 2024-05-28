@@ -16,7 +16,9 @@
 .creature {
     background-color: rgb(0, 77, 59);
 }
-
+.list a:hover {
+    color: rgb(10, 144, 92);
+}
 .creature>a>img {
     border-color: rgb(0, 106, 69);
     

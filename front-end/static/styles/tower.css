@@ -3,21 +3,33 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: rgba(85, 0, 0, 0.902);
-    background-image: url('../Images/Fortress_background1jpg.jpg');
+    background-image: url('../Images/tower_back.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Kanit", sans-serif
 }
+
 .container {
-    background-color: rgba(15, 15, 15, 0.838);
+    background-color: rgba(0, 0, 0, 0.822);
+}
+.list>a{
+    color: rgb(229, 229, 229);
+}
+.list>div>a{
+    color: rgb(229, 229, 229);
+}
+.drop a{
+    color: rgb(229, 229, 229);
+}
+.list a:hover {
+    color: rgb(165, 250, 239);
 }
 .creature {
-    background-color: rgb(65, 65, 33);
+    background-color: rgb(79, 149, 136);
 }
 
 .creature>a>img {
-    border-color: rgb(74, 31, 0);
+    border-color: rgb(6, 112, 119);
     
 }
 .description{
@@ -28,30 +40,22 @@
     margin-top: -2px; 
 
 }
-
 .description li{
-    color: rgb(176, 176, 176);
+    color: rgb(242, 242, 242);
 }
 .name {
     text-align: center;
     font-size: 2em;
-    color: rgb(38, 20, 4);
-    font-weight: bold;
-    transition: 240ms ease;
+    color: rgb(0, 33, 86);
 }
 .creature:hover{
-    background-color: rgb(50, 47, 0);
+    background-color: rgb(15, 133, 151);
     border-radius: 10%; 
     height: 124%;
     width: 96%;
-    box-shadow: 0px 5px 5px 9px rgb(100, 78, 0);
+    box-shadow: 0px 5px 5px 9px rgb(88, 199, 197);
     margin-top: -30px;
     margin-left: -5px;
-}.creature:hover .name{
-    color: rgb(130, 103, 35)
-}
-.list a:hover {
-    color: rgb(183, 113, 0)
 }
 @media (max-width: 1000px) {
     .container {
