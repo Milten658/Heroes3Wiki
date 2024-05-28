@@ -16,8 +16,8 @@
 }
 
 .creature {
-    width: 90%;
-    height: 85%;
+    width: 91%;
+    height: 87%;
     margin-top: 20px;
     background-color: rgb(135, 0, 0);
     border-radius: 10%;
@@ -45,16 +45,13 @@
     position: absolute;
     transition: 240ms ease;
     list-style: none;
-    margin-top: -2px;
-
+    margin-left: 0.5%;
 }
 
 .description li {
     display: flex;
-    align-items: center;
-    padding-bottom: ;
     text-align: left;
-    color: rgb(176, 176, 176);
+    color: rgb(176, 176, 176); 
 }
 
 /* .level{ 
@@ -67,13 +64,13 @@
 } */
 .name {
     text-align: center;
-    font-size: 2em;
+    font-size: 3vh;
     color: rgb(172, 37, 0);
     font-weight: bold;
 }
 
 .creature:hover>.description {
-    font-size: 30px;
+    font-size: 30PX;
 }
 
 .creature:hover .stat {
@@ -97,12 +94,12 @@
 }
 
 #lvlim {
-    width: 30px;
+    width: 30PX;
     height: 25px;
 }
 
 #prcim {
-    width: 30px;
+    width: 30PX;
     height: 30px;
 }
 
@@ -111,6 +108,7 @@
     width: 0%;
     height: 0;
     vertical-align: sub;
+    margin-top: 6px;
 }
 
 @media (max-width: 1000px) {

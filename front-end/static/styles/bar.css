@@ -21,7 +21,7 @@
 }
 .list>div>a { 
     padding: 20px;
-    padding-left: 80px;
+    padding-left: 70px;
     text-decoration: none;
     color: rgb(215, 215, 215);
     font-size: 1.5em;
@@ -33,7 +33,7 @@
     transition: 350ms ease;
 }
 .menu{
-    margin-left: 80px;
+    margin-left: 70px;
     position: absolute;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.375);
@@ -63,9 +63,6 @@
 @media (max-width: 1000px){
     .navbar {
         justify-content: space-between;
-    }
-    .list {
-        display: none;
     }
     .list a {
         padding-left: 20px;

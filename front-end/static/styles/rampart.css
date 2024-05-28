@@ -3,21 +3,32 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: rgba(85, 0, 0, 0.902);
-    background-image: url('../Images/Fortress_background1jpg.jpg');
+    background-image: url('../Images/rampart_back.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Kanit", sans-serif
-}
-.container {
-    background-color: rgba(15, 15, 15, 0.838);
-}
-.creature {
-    background-color: rgb(65, 65, 33);
 }
 
+.container {
+    background-color: rgba(5, 3, 0, 0.822);
+}
+.creature {
+    background-color: rgb(33, 125, 62);
+}
+.list>a{
+    color: rgb(121, 57, 0);
+}
+.list>div>a{
+    color: rgb(121, 57, 0);
+}
+.drop a{
+    color: rgb(121, 57, 0);
+}
+.list a:hover {
+    color: rgb(149, 203, 48);
+}
 .creature>a>img {
-    border-color: rgb(74, 31, 0);
+    border-color: rgb(69, 38, 0);
     
 }
 .description{
@@ -35,23 +46,16 @@
 .name {
     text-align: center;
     font-size: 2em;
-    color: rgb(38, 20, 4);
-    font-weight: bold;
-    transition: 240ms ease;
+    color: rgb(78, 45, 0);
 }
 .creature:hover{
-    background-color: rgb(50, 47, 0);
+    background-color: rgb(20, 118, 35);
     border-radius: 10%; 
     height: 124%;
     width: 96%;
-    box-shadow: 0px 5px 5px 9px rgb(100, 78, 0);
+    box-shadow: 0px 5px 5px 9px rgb(110, 203, 77);
     margin-top: -30px;
     margin-left: -5px;
-}.creature:hover .name{
-    color: rgb(130, 103, 35)
-}
-.list a:hover {
-    color: rgb(183, 113, 0)
 }
 @media (max-width: 1000px) {
     .container {

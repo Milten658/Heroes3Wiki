@@ -1,0 +1,20 @@
+
+.creature>a>img {
+ border-color: rgb(73, 16, 0);
+}
+.description li {
+color: rgb(176, 176, 176); 
+}
+.name {
+color: rgb(172, 37, 0);
+font-size: 30px;
+}
+.creature:hover{
+    border-radius: 10%; 
+    height: 124%;
+    width: 96%;
+    margin-top: -30px;
+    margin-left: -5px;
+    box-shadow: 0px 5px 5px 9px rgb(116, 0, 0);
+background-color: rgb(17, 0, 0);
+}
