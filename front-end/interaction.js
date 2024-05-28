@@ -27,7 +27,7 @@ async function load_creatures() {
             method: 'GET'
         })
         const data = await res.json();
-        console.log(data)
+        //console.log(data)
 
         Creature_list = `<p class=\"creature_name\">${data[0].name} </p>` +
             `<div class=\"creature_img_stat\">` +
@@ -67,7 +67,7 @@ async function load_creatures() {
             method: 'GET'
         })
         const data = await res.json();
-        console.log(data)
+        //console.log(data)
 
         if (extractedWord == 'all_creatures') {
 
@@ -88,7 +88,7 @@ async function load_creatures() {
 
                 Creature_box = `<div class=\"creature\" data-sort=\"\">` +
                     `<div class=\"name\"> ${data[i].name}</div>` +
-                    `<a href =\"\"><img src=\"static/Images/average/${data[i].img}\" /></a>` +
+                    `<a href =\"creature.html?name=${data[i].name}\"><img src=\"static/Images/average/${data[i].img}\" /></a>` +
                     `<ul class=\"description\">` +
                     `<li> <img src=\"static/Images/lvlo.png\" class=\"stat\" id=\"lvlim\">` +
                     `<p class=\"stats\" id=\"lvle\">Level: ${data[i].level}</p> </li >` +
