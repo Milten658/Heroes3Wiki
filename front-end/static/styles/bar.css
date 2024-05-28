@@ -37,15 +37,26 @@
     position: absolute;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.375);
-    display: none;
-    font-size: 2em;
+    font-size: 1.6em;
     transition: 300ms ease;
     z-index: 5;
     border-radius: 8px;
+    margin-top: 10px;
+    margin-top: -2000px;
 }
 .list div:hover > .menu {
-    display: block;
+    animation: drop 300ms ease-out forwards;
 }
+@keyframes drop {
+    from {
+        margin-top: -20px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }}   
 .list a:hover {
     color: rgb(208, 84, 12)
 }

@@ -35,120 +35,173 @@
                         </ul>
                     </div>
                     <a href="all_creatures.html">All creatures</a>
-                    <!-- <form action="" method="get" class="search_form">
-                        <input сlass="s" placeholder="search" type="search">
-                        <button class="sea" type="submit"><img src="static/Images/free-icon-loupe-751463.png"
-                                alt=""></button>
-                    </form> -->
                 </div>
             </div>
         </div>
         <div class="left-column">
 
-            <div class="form_wrapper">
-                <div class="form_title">Choose a level</div>
-                <div class="level_form">
-                    <form action="#">
-                        <ul class="level_menu">
-                            <li class="level_check"> <label class="grid_level">
-                                    <div class="checkbox" name="level">Level 1</div>
-                                    <input type="checkbox" name="level_1" class="fake">
-                                    <span class="real"></span>
-                                </label> </li>
-
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="level">Level 2</div>
-                                    <input class="fake" type="checkbox" name="level_2">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="checkbox_2">Level 3</div>
-                                    <input class="fake" type="checkbox" name="level_3">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="checkbox_2">Level 4</div>
-                                    <input class="fake" type="checkbox" name="inchecbox_2">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="checkbox_2">Level 5</div>
-                                    <input class="fake" type="checkbox" name="inchecbox_2">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="checkbox_2">Level 6</div>
-                                    <input class="fake" type="checkbox" name="inchecbox_2">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                            <li class="level_check"><label class="grid_level">
-                                    <div class="checkbox" name="checkbox_2">Level 7</div>
-                                    <input class="fake" type="checkbox" name="inchecbox_2">
-                                    <span class="real"></span>
-                                </label>
-                            </li>
-                    </form>
-                </div>
-                </ul>
-            </div>
-
             <div class="sort_wrapper">
-                <div class="sort_title">Sort parameter</div>
-                <div class="sort_form">
-                    <form action="#">
-                        <ul class="sort_menu">
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_1"> Attack</div>
-                                    <input type="radio" value="attack" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_2">Level</div>
-                                    <input type="radio" value="level" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_3">Defense</div>
-                                    <input type="radio" value="defense" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_4">Hp</div>
-                                    <input type="radio" value="health" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_5">Speed</div>
-                                    <input type="radio" value="speed" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
-                                    <div class="checkbox" name="radio_6">Price</div>
-                                    <input type="radio" value="price" name="sort_by" class="fake">
-                                    <span class="real_sort"></span>
-                                </label> </li>
-                        </ul>
-                        <div class="sort_title">Sort by</div>
-                        <div class="submit_wrapper">
+                <div class="level_faction">
+                    <div class="form_wrapper">
+                        <div class="form_title">Level</div>
+                        <div class="level_form">
+                            <ul class="level_menu">
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="level">Level 1</div>
+                                        <input class="fake" type="checkbox" name="level_1">
+                                        <span class="real"></span>
+                                    </label> </li>
 
-                            <button type="submit" class="sort_asc">Ascending</button>
-                            <button type="submit" class="sort_desc">Descending</button>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="level">Level 2</div>
+                                        <input class="fake" type="checkbox" name="level_2">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="checkbox_2">Level 3</div>
+                                        <input class="fake" type="checkbox" name="level_3">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="checkbox_2">Level 4</div>
+                                        <input class="fake" type="checkbox" name="level_4">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="checkbox_2">Level 5</div>
+                                        <input class="fake" type="checkbox" name="level_5">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="checkbox_2">Level 6</div>
+                                        <input class="fake" type="checkbox" name="level_6">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
+                                <li class="level_check"><label class="grid_level">
+                                        <div class="checkbox" name="checkbox_2">Level 7</div>
+                                        <input class="fake" type="checkbox" name="level_7">
+                                        <span class="real"></span>
+                                    </label>
+                                </li>
                         </div>
-                    </form>
+                        </ul>
+                    </div>
+                    <div class="form_wrapper" id="factions_form">
+                        <div class="form_title">Faction</div>
+                        <div class="level_form">
+                            <ul class="level_menu">
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Necropolis</div>
+                                        <input type="checkbox" name="factoin_necropolis" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Inferno</div>
+                                        <input type="checkbox" name="factoin_infernp" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Stronghold</div>
+                                        <input type="checkbox" name="factoin_stronghold" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Castle</div>
+                                        <input type="checkbox" name="factoin_castle" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Rampart</div>
+                                        <input type="checkbox" name="factoin_rampart" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Dungeon</div>
+                                        <input type="checkbox" name="factoin_dungeon" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Fortress</div>
+                                        <input type="checkbox" name="factoin_fortress" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Conflux</div>
+                                        <input type="checkbox" name="factoin_conflux" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                                <li class="level_check"> <label class="grid_level">
+                                        <div class="checkbox" name="faction_check">Tower</div>
+                                        <input type="checkbox" name="factoin_tower" class="fake">
+                                        <span class="real"></span>
+                                    </label> </li>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sort_title">Sort by</div>
+                <div class="sort_form">
+                    <ul class="sort_menu">
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_1"> Attack</div>
+                                <input type="radio" value="attack" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_2">Level</div>
+                                <input type="radio" value="level" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_3">Defense</div>
+                                <input type="radio" value="defense" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_4">Hp</div>
+                                <input type="radio" value="health" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_5">Speed</div>
+                                <input type="radio" value="speed" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_6">Price</div>
+                                <input type="radio" value="price" name="sort_by" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                    </ul>
+                    <ul class="sort_menu">
+                        <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_6"> Ascending</div>
+                                <input type="radio"  value="asc" name="asc_desc" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                            <li class="sort_check"> <label class="grid_p">
+                                <div class="checkbox" name="radio_6"> Descending</div>
+                                <input type="radio" value="desc" name="asc_desc" class="fake">
+                                <span class="real_sort"></span>
+                            </label> </li>
+                        </ul>   
+                    <div class="submit_wrapper">
+                        <button type="submit" class="sort_asc">Sort</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container" id="nav">  
+        <div class="container" id="nav">
             <div class=\'creature_line\' atk=\'\' lvl=\'\' hp=\'\' frc=\'\' hp=\'\' spd=\'\' prc=\'prc\'>
                 <a href=\'creature.html\'> <img class=\'small_pic\' src=\'static/Images/small/\' id=\'\' alt=\'\'></a>
-                 <a href=\'creature.html\'>Ancient Behemoth - Stronghold - 7 lvl</a>
-             </div>
+                <a href=\'creature.html\'>Ancient Behemoth - Stronghold - 7 lvl</a>
+            </div>
         </div>
     </div>
     <script src="sort.js"></script>

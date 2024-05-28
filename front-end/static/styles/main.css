@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .all_content {
@@ -28,6 +28,7 @@ body {
     grid-row: 1/13;
     grid-column: 1/13;
     position: relative;
+
 }
 
 .back_video {
