@@ -80,6 +80,7 @@ app.get('/page_load', async (req, res) => {
                         res.send(result.recordset);
                         //console.dir(result.recordset);
                     }
+
                 });
             }
             catch (err) {
