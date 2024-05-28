@@ -51,43 +51,43 @@
                             <ul class="level_menu">
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="level">Level 1</div>
-                                        <input class="fake" type="checkbox" name="level_1">
+                                        <input class="fake" type="checkbox" id="level_1_check" name="level_1">
                                         <span class="real"></span>
                                     </label> </li>
 
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="level">Level 2</div>
-                                        <input class="fake" type="checkbox" name="level_2">
+                                        <input class="fake" type="checkbox" id="level_2_check" name="level_2">
                                         <span class="real"></span>
                                     </label>
                                 </li>
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="checkbox_2">Level 3</div>
-                                        <input class="fake" type="checkbox" name="level_3">
+                                        <input class="fake" type="checkbox" id="level_3_check" name="level_3">
                                         <span class="real"></span>
                                     </label>
                                 </li>
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="checkbox_2">Level 4</div>
-                                        <input class="fake" type="checkbox" name="level_4">
+                                        <input class="fake" type="checkbox" id="level_4_check" name="level_4">
                                         <span class="real"></span>
                                     </label>
                                 </li>
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="checkbox_2">Level 5</div>
-                                        <input class="fake" type="checkbox" name="level_5">
+                                        <input class="fake" type="checkbox" id="level_5_check" name="level_5">
                                         <span class="real"></span>
                                     </label>
                                 </li>
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="checkbox_2">Level 6</div>
-                                        <input class="fake" type="checkbox" name="level_6">
+                                        <input class="fake" type="checkbox" id="level_6_check" name="level_6">
                                         <span class="real"></span>
                                     </label>
                                 </li>
                                 <li class="level_check"><label class="grid_level">
                                         <div class="checkbox" name="checkbox_2">Level 7</div>
-                                        <input class="fake" type="checkbox" name="level_7">
+                                        <input class="fake" type="checkbox" id="level_7_check" name="level_7">
                                         <span class="real"></span>
                                     </label>
                                 </li>
@@ -100,51 +100,52 @@
                             <ul class="level_menu">
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Necropolis</div>
-                                        <input type="checkbox" name="factoin_necropolis" class="fake">
+                                        <input type="checkbox" name="factoin_necropolis" id="Necropolis" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Inferno</div>
-                                        <input type="checkbox" name="factoin_infernp" class="fake">
+                                        <input type="checkbox" name="factoin_infernp" id="Inferno" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Stronghold</div>
-                                        <input type="checkbox" name="factoin_stronghold" class="fake">
+                                        <input type="checkbox" name="factoin_stronghold" id="Stronghold" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Castle</div>
-                                        <input type="checkbox" name="factoin_castle" class="fake">
+                                        <input type="checkbox" name="factoin_castle" id="Castle" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Rampart</div>
-                                        <input type="checkbox" name="factoin_rampart" class="fake">
+                                        <input type="checkbox" name="factoin_rampart" id="Rampart" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Dungeon</div>
-                                        <input type="checkbox" name="factoin_dungeon" class="fake">
+                                        <input type="checkbox" name="factoin_dungeon" id="Dungeon" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Fortress</div>
-                                        <input type="checkbox" name="factoin_fortress" class="fake">
+                                        <input type="checkbox" name="factoin_fortress" id="Fortress" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Conflux</div>
-                                        <input type="checkbox" name="factoin_conflux" class="fake">
+                                        <input type="checkbox" name="factoin_conflux" id="Conflux" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
                                 <li class="level_check"> <label class="grid_level">
                                         <div class="checkbox" name="faction_check">Tower</div>
-                                        <input type="checkbox" name="factoin_tower" class="fake">
+                                        <input type="checkbox" name="factoin_tower" id="Tower" class="fake">
                                         <span class="real"></span>
                                     </label> </li>
+                            </ul>
                         </div>
-                        </ul>
+
                     </div>
                 </div>
                 <div class="sort_title">Sort by</div>
@@ -184,15 +185,15 @@
                     <ul class="sort_menu">
                         <li class="sort_check"> <label class="grid_p">
                                 <div class="checkbox" name="radio_6"> Ascending</div>
-                                <input type="radio"  value="asc" name="asc_desc" class="fake">
+                                <input type="radio" value="asc" name="asc_desc" class="fake">
                                 <span class="real_sort"></span>
                             </label> </li>
-                            <li class="sort_check"> <label class="grid_p">
+                        <li class="sort_check"> <label class="grid_p">
                                 <div class="checkbox" name="radio_6"> Descending</div>
                                 <input type="radio" value="desc" name="asc_desc" class="fake">
                                 <span class="real_sort"></span>
                             </label> </li>
-                        </ul>   
+                    </ul>
                     <div class="submit_wrapper">
                         <button type="submit" class="sort_asc">Sort</button>
                     </div>
@@ -201,14 +202,15 @@
         </div>
 
         <div class="container" id="nav">
-            <div class=\'creature_line\' atk=\'\' lvl=\'\' hp=\'\' frc=\'\' hp=\'\' spd=\'\' prc=\'prc\'>
+            <!-- <div class=\'creature_line\' atk=\'\' lvl=\'\' hp=\'\' frc=\'\' hp=\'\' spd=\'\' prc=\'prc\'>
                 <a href=\'creature.html\'> <img class=\'small_pic\' src=\'static/Images/small/\' id=\'\' alt=\'\'></a>
                 <a href=\'creature.html\'>Ancient Behemoth - Stronghold - 7 lvl</a>
-            </div>
+            </div> -->
+
         </div>
     </div>
-    <script src="sort.js"></script>
     <script src="interaction.js"></script>
+    <script src="sort.js"></script>
 </body>
 
 </html>
