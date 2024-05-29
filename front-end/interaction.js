@@ -74,7 +74,7 @@ async function load_creatures() {
             for (let i = 0; i < data.length; i++) {
 
                 Creature_box = `<div class=\'creature_line\' atk=\'${data[i].attack}\' lvl=\'${data[i].level}\' ` +
-                    `hp=\'${data[i].hp}\' frc=\'${data[i].faction}\' def=\'${data[i].defence}\' ` +
+                    `hp=\'${data[i].health}\' frc=\'${data[i].faction}\' def=\'${data[i].defence}\' ` +
                     ` spd=\'${data[i].speed}\' prc=\'${data[i].price}\'>` +
                     `<a href=\'creature.html?name=${data[i].name}\'> <img class=\'small_pic\' ` +
                     `src=\'static/Images/small/${data[i].img}\' id=\'${data[i].faction}\' alt=\'\'></a>` +
